@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct AssetModel: Codable {
+public struct AssetModel: Codable, Hashable {
     let id: Int
     let name: String
     let created_at: String
