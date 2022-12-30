@@ -11,7 +11,7 @@ enum APIErrors: Error {
 public class SnipeIt {
     public let models: AssetModels = AssetModels()
     
-    class API {
+    public class API {
         static let shared = API()
         
         struct Request<T: Codable> {
@@ -75,9 +75,11 @@ public class SnipeIt {
         var url: String?
         var token: String?
         
-        static func configure(withUrl: URL, andToken token: String) {
+        public static func configure(withUrl: URL, andToken token: String) {
             API.shared.url = withUrl.absoluteString
             API.shared.token = token
         }
     }
+    
+    public init() {}
 }
