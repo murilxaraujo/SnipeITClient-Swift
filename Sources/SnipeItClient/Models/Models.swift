@@ -20,8 +20,8 @@ public class AssetModels {
         var sort = SortOrder.asc
         
         public struct Response: Codable {
-            let total: Int
-            let rows: [AssetModel]
+            public let total: Int
+            public let rows: [AssetModel]
         }
         
         public init() {}
