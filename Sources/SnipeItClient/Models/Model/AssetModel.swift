@@ -8,8 +8,8 @@
 import Foundation
 
 public struct AssetModel: Codable, Hashable {
-    let id: Int
-    let name: String
-    let created_at: String
-    let updated_at: String
+    public let id: Int
+    public let name: String
+    public let created_at: String
+    public let updated_at: String
 }
